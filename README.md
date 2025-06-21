@@ -15,18 +15,16 @@ Clothly Backend is a secure and scalable RESTful API built with **Node.js**, **E
 
 ## 📁 Folder Structure
 
+```
 clothly-backend/
-├── controllers/ # Route handlers
-├── routes/ # Auth, user, admin, service routes
-├── middleware/ # JWT auth, role check, error handler
-├── db/ # PostgreSQL pool setup
-├── utils/ # Helper functions
-├── .env # Environment variables
-└── server.js # Entry point
-
-yaml
-Copy
-Edit
+├── controllers/      # Route handlers
+├── routes/           # Auth, user, admin, service routes
+├── middleware/       # JWT auth, role check, error handler
+├── db/               # PostgreSQL pool setup
+├── utils/            # Helper functions
+├── .env              # Environment variables
+└── server.js         # Entry point
+```
 
 ---
 
@@ -35,19 +33,21 @@ Edit
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/your-username/clothly-backend.git
+git clone https://github.com/sbasavam/clothly-backend.git
 cd clothly-backend
-2. Install dependencies
-bash
-Copy
-Edit
-npm install
-3. Configure environment variables
-Create a .env file in the root:
+```
 
-env
-Copy
-Edit
+### 2. Install dependencies
+
+```bash
+npm install
+```
+
+### 3. Configure environment variables
+
+Create a `.env` file in the root:
+
+```env
 PORT=5000
 DB_HOST=localhost
 DB_USER=your_db_user
@@ -55,40 +55,35 @@ DB_PASSWORD=your_password
 DB_NAME=clothly
 DB_PORT=5432
 JWT_SECRET=your_secret_key
-4. Run the server
-bash
-Copy
-Edit
+```
+
+### 4. Run the server
+
+```bash
 npm start
-The server will run at http://localhost:5000
+```
 
-🔐 Authentication
-JWT-based login/session handling
+The server will run at `http://localhost:5000`
 
-Middleware-protected routes
+---
 
-Role-based access for user and admin
+## 🔐 Authentication
 
-🧪 Sample Endpoints
-Method	Endpoint	Description
-POST	/api/auth/register	Register a new user
-POST	/api/auth/login	Authenticate user
-GET	/api/bookings	List bookings for a user
-POST	/api/bookings	Create a new service booking
-GET	/api/admin/orders	View all orders (admin only)
+- **JWT-based** login/session handling
+- Middleware-protected routes
+- Role-based access for `user` and `admin`
 
-🛠️ Future Enhancements
-Stripe or Razorpay payment integration
 
-Admin dashboard analytics APIs
+## 🛠️ Future Enhancements
+- completing the rest modules api's
+- Stripe or Razorpay payment integration  
+- Admin dashboard analytics APIs  
+- Notifications via email or SMS
 
-Notifications via email or SMS
 
-📄 License
-This project is open-source and available under the MIT License.
+## 👤 Author
 
-👤 Author
-Sanganabasava M
-💼 Full-Stack Developer
-📧 sanganabasavam1999@gmail.com
+**Sanganabasava M**  
+💼 Full-Stack Developer  
+📧 sanganabasavam1999@gmail.com  
 📞 +91 81509 19941
