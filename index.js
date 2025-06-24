@@ -7,7 +7,7 @@ app.use(express.json()); // Parse JSON bodies
 
 // CORS Configuration
 const corsOptions = { 
-  origin: ['http://localhost:5173', 'https://clothly-vert.vercel.app/'], // Add your deployed frontend URL here
+  origin: '*', // Add your deployed frontend URL here
   credentials: true, // Allow credentials (cookies, auth headers)
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
   allowedHeaders: ['Content-Type', 'Authorization'],
